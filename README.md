@@ -19,3 +19,8 @@ Fahad
 - Git version control
 - Linux deployment
 - Nginx web server
+
+
+## Version
+
+Current version: 2.0
