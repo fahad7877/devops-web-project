@@ -12,3 +12,10 @@ A simple web project created to practice Git and DevOps concepts.
 ## Author
 
 Fahad
+
+## Features
+
+- Simple web application
+- Git version control
+- Linux deployment
+- Nginx web server
