@@ -23,4 +23,4 @@ Fahad
 
 ## Version
 
-Current version: 2.0
+Current version: 3.0
