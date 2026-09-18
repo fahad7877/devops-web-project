@@ -24,3 +24,8 @@ Fahad
 ## Version
 
 Current version: 3.0
+
+
+## Deployment
+
+Deployment is currently being configured.
