@@ -29,8 +29,3 @@ Current version: 3.0
 ## Deployment
 
 Deployment is currently being configured.
-
-
-## Reset Practice
-
-This commit is for practicing git reset.
