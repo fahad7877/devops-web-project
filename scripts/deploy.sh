@@ -3,7 +3,7 @@
 echo "Starting deployment..."
 
 SOURCE_DIR="$(dirname "$(dirname "$(realpath "$0")")")"
-WEB_DIR="/var/www/devops-web"
+WEB_DIR="/var/www/devops-web-project"
 
 echo "Source directory: $SOURCE_DIR"
 echo "Web directory: $WEB_DIR"
