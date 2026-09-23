@@ -3,46 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Web Project</title>
+
+    <meta name="description" content="Fahad's DevOps portfolio and deployment project">
+
+    <title>Fahad | DevOps Engineer</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>DevOps Web Deployment</h1>
-        <p>Learning DevOps step by step</p>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Fahad<span>.</span></a>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#deployment">Deployment</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero -->
     <main>
 
-        <section>
-            <h2>Deployment Status</h2>
-            <p>Website deployment is currently under development.</p>
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">DEVOPS ENGINEER IN PROGRESS</p>
+
+                    <h1>
+                        Building,
+                        <span>automating</span>,
+                        and deploying.
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm Fahad, a DevOps learner focused on Linux,
+                        Git, automation, cloud technologies, containers,
+                        and reliable deployments.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                        </a>
+
+                        <a href="https://github.com/fahad7877"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="terminal-card">
+
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-body">
+                        <p><span class="terminal-green">$</span> whoami</p>
+                        <p>fahad</p>
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            systemctl status nginx
+                        </p>
+
+                        <p class="status">
+                            ● active (running)
+                        </p>
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            ./deploy.sh
+                        </p>
+
+                        <p class="status">
+                            ✓ Deployment completed
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
-        <section>
-            <h2>About This Project</h2>
-            <p>
-                This project is created to practice Git, Linux,
-                Bash scripting, Nginx, and deployment.
-            </p>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">ABOUT</p>
+                    <h2>Learning by building.</h2>
+                </div>
+
+                <div class="about-content">
+                    <p>
+                        This website is part of my DevOps learning journey.
+                        Instead of only studying individual technologies,
+                        I'm using this project to practice a complete
+                        development and deployment workflow.
+                    </p>
+
+                    <p>
+                        The project uses Git for version control, GitHub
+                        for remote repositories, Linux for the server
+                        environment, Nginx for web serving, and Bash
+                        scripts for deployment automation.
+                    </p>
+                </div>
+
+            </div>
         </section>
 
-        <section>
-            <h2>Technologies</h2>
-            <ul>
-                <li>Git</li>
-                <li>Linux</li>
-                <li>Nginx</li>
-                <li>Bash</li>
-            </ul>
+        <!-- Skills -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">TECHNOLOGIES</p>
+                    <h2>Tools I'm working with.</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Linux</h3>
+                        <p>Server administration and command-line workflows.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Git</h3>
+                        <p>Version control, branches, merges and collaboration.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Nginx</h3>
+                        <p>Web server configuration and website deployment.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Bash</h3>
+                        <p>Automation scripts and deployment workflows.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>AWS</h3>
+                        <p>Learning cloud infrastructure and services.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Docker</h3>
+                        <p>Learning containerization and application deployment.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">PROJECT</p>
+                    <h2>What I'm building.</h2>
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-info">
+
+                        <p class="project-number">01</p>
+
+                        <h3>DevOps Web Deployment</h3>
+
+                        <p>
+                            A practical DevOps project that demonstrates
+                            Git version control, GitHub integration,
+                            Linux administration, Nginx configuration,
+                            and Bash deployment automation.
+                        </p>
+
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Linux</span>
+                            <span>Nginx</span>
+                            <span>Bash</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Deployment -->
+        <section id="deployment" class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">DEPLOYMENT</p>
+                    <h2>Current system status.</h2>
+                </div>
+
+                <div class="status-grid">
+
+                    <div class="status-card">
+                        <div class="status-dot"></div>
+                        <div>
+                            <h3>Website</h3>
+                            <p>Online</p>
+                        </div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-dot"></div>
+                        <div>
+                            <h3>Nginx</h3>
+                            <p>Running</p>
+                        </div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-dot"></div>
+                        <div>
+                            <h3>Deployment</h3>
+                            <p>Ready</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>Created by Fahad</p>
+        <div class="container footer-content">
+            <p>© 2026 Fahad. Built while learning DevOps.</p>
+
+            <a href="https://github.com/fahad7877"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub →
+            </a>
+        </div>
     </footer>
 
 </body>
