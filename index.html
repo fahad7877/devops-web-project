@@ -4,269 +4,671 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Fahad's DevOps portfolio and deployment project">
+    <meta name="description"
+          content="Fahad Abdulla — DevOps Engineer portfolio">
 
-    <title>Fahad | DevOps Engineer</title>
+    <title>Fahad Abdulla | DevOps Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Fahad<span>.</span></a>
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#deployment">Deployment</a>
-            </nav>
-        </div>
-    </header>
+<header class="navbar">
 
-    <!-- Hero -->
-    <main>
+    <div class="nav-container">
 
-        <section class="hero">
-            <div class="container hero-content">
+        <a href="#home" class="logo">
+            Fahad <span>Abdulla</span>
+        </a>
 
-                <div class="hero-text">
+        <nav class="nav-links">
 
-                    <p class="eyebrow">DEVOPS ENGINEER IN PROGRESS</p>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
 
-                    <h1>
-                        Building,
-                        <span>automating</span>,
-                        and deploying.
-                    </h1>
+        </nav>
 
-                    <p class="hero-description">
-                        I'm Fahad, a DevOps learner focused on Linux,
-                        Git, automation, cloud technologies, containers,
-                        and reliable deployments.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            View Projects
-                        </a>
-
-                        <a href="https://github.com/fahad7877"
-                           class="btn btn-secondary"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            GitHub
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="terminal-card">
-
-                    <div class="terminal-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <div class="terminal-body">
-                        <p><span class="terminal-green">$</span> whoami</p>
-                        <p>fahad</p>
-
-                        <p>
-                            <span class="terminal-green">$</span>
-                            systemctl status nginx
-                        </p>
-
-                        <p class="status">
-                            ● active (running)
-                        </p>
-
-                        <p>
-                            <span class="terminal-green">$</span>
-                            ./deploy.sh
-                        </p>
-
-                        <p class="status">
-                            ✓ Deployment completed
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">ABOUT</p>
-                    <h2>Learning by building.</h2>
-                </div>
-
-                <div class="about-content">
-                    <p>
-                        This website is part of my DevOps learning journey.
-                        Instead of only studying individual technologies,
-                        I'm using this project to practice a complete
-                        development and deployment workflow.
-                    </p>
-
-                    <p>
-                        The project uses Git for version control, GitHub
-                        for remote repositories, Linux for the server
-                        environment, Nginx for web serving, and Bash
-                        scripts for deployment automation.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section section-dark">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">TECHNOLOGIES</p>
-                    <h2>Tools I'm working with.</h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <h3>Linux</h3>
-                        <p>Server administration and command-line workflows.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Git</h3>
-                        <p>Version control, branches, merges and collaboration.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Nginx</h3>
-                        <p>Web server configuration and website deployment.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Bash</h3>
-                        <p>Automation scripts and deployment workflows.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>AWS</h3>
-                        <p>Learning cloud infrastructure and services.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Docker</h3>
-                        <p>Learning containerization and application deployment.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">PROJECT</p>
-                    <h2>What I'm building.</h2>
-                </div>
-
-                <div class="project-card">
-
-                    <div class="project-info">
-
-                        <p class="project-number">01</p>
-
-                        <h3>DevOps Web Deployment</h3>
-
-                        <p>
-                            A practical DevOps project that demonstrates
-                            Git version control, GitHub integration,
-                            Linux administration, Nginx configuration,
-                            and Bash deployment automation.
-                        </p>
-
-                        <div class="tags">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>Linux</span>
-                            <span>Nginx</span>
-                            <span>Bash</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Deployment -->
-        <section id="deployment" class="section section-dark">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">DEPLOYMENT</p>
-                    <h2>Current system status.</h2>
-                </div>
-
-                <div class="status-grid">
-
-                    <div class="status-card">
-                        <div class="status-dot"></div>
-                        <div>
-                            <h3>Website</h3>
-                            <p>Online</p>
-                        </div>
-                    </div>
-
-                    <div class="status-card">
-                        <div class="status-dot"></div>
-                        <div>
-                            <h3>Nginx</h3>
-                            <p>Running</p>
-                        </div>
-                    </div>
-
-                    <div class="status-card">
-                        <div class="status-dot"></div>
-                        <div>
-                            <h3>Deployment</h3>
-                            <p>Ready</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>© 2026 Fahad. Built while learning DevOps.</p>
+        <div class="nav-right">
 
             <a href="https://github.com/fahad7877"
                target="_blank"
-               rel="noopener noreferrer">
-                GitHub →
+               rel="noopener noreferrer"
+               class="social-icon"
+               aria-label="GitHub">
+                GH
             </a>
+
+            <a href="https://www.linkedin.com/in/fahad-abdulla-7b8427393/"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="contact-button">
+    <span>in</span>
+    LinkedIn
+</a>
+
+<a href="mailto:fahadabdulla3528@gmail.com"
+   class="contact-button">
+    <span>@</span>
+    Email Me
+</a>
+
+<a href="#contact"
+   class="contact-button">
+    <span>→</span>
+    Let's Talk
+</a>
+
+</div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section id="home" class="hero">
+
+    <!-- Background mountains -->
+    <div class="mountains mountains-left"></div>
+    <div class="mountains mountains-right"></div>
+
+    <!-- Purple atmospheric glow -->
+    <div class="hero-purple-glow"></div>
+
+    <!-- Large background typography -->
+    <div class="hero-name">
+
+        <span>Fahad</span>
+        <span>Abdulla</span>
+
+    </div>
+
+
+    <div class="hero-container">
+
+        <!-- HERO LEFT -->
+
+        <div class="hero-copy">
+
+            <div class="eyebrow">
+                <span></span>
+                DEVOPS ENGINEER
+            </div>
+
+            <h1>
+                I build, deploy and
+                <span>automate</span> reliable
+                applications.
+            </h1>
+
+            <p>
+                Using Linux, AWS, Docker, Ansible and
+                CI/CD to solve real-world problems.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#projects" class="primary-button">
+                    View My Work
+                    <span>→</span>
+                </a>
+
+                <a href="#about" class="intro-button">
+                    <span class="play-icon">▶</span>
+                    Watch Intro
+                </a>
+
+            </div>
+
         </div>
-    </footer>
+
+
+        <!-- HERO PHOTO -->
+
+        <div class="hero-person">
+
+            <div class="person-glow"></div>
+
+            <img src="images/fahad-cutout.png"
+                 alt="Fahad Abdulla">
+
+        </div>
+
+
+        <!-- HANDWRITTEN TEXT -->
+
+        <div class="hero-note">
+
+            <div>
+                Build
+            </div>
+
+            <div>
+                Automate
+            </div>
+
+            <div>
+                Deploy
+            </div>
+
+            <div>
+                Learn
+            </div>
+
+            <div>
+                Grow
+            </div>
+
+            <div class="note-arrow">
+                ↙
+            </div>
+
+        </div>
+
+
+        <!-- TERMINAL CARD -->
+
+        <div class="hero-terminal">
+
+            <div class="terminal-header">
+
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+
+            </div>
+
+            <div class="terminal-body">
+
+                <div>
+                    fahad@devops:~$
+                </div>
+
+                <div class="terminal-command">
+                    Build Automate Deploy _
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="about">
+
+    <div class="section-container">
+
+        <!-- ABOUT IMAGE -->
+
+        <div class="about-image-card">
+
+            <div class="about-image-border"></div>
+
+            <img src="images/97673365-6aa9-44f4-a683-ea7f1547edee.jpeg"
+                 alt="Fahad Abdulla">
+
+            <div class="about-image-label">
+                Building<br>
+                Better Systems
+                <span>↗</span>
+            </div>
+
+            <div class="about-mini-image">
+                <div class="mini-mountain"></div>
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT CONTENT -->
+
+        <div class="about-content">
+
+            <div class="section-label">
+                <span>01</span>
+                ABOUT ME
+            </div>
+
+            <h2>
+                Passionate about
+                <span>Automation.</span>
+            </h2>
+
+            <p>
+                I'm Fahad Abdulla, a BCA graduate and an aspiring
+                DevOps Engineer based in Kochi, Kerala. I enjoy
+                working with Linux, cloud technologies and
+                automation tools to build and deploy real-world
+                applications.
+            </p>
+
+            <a href="#skills" class="outline-button">
+                More About Me
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <!-- ABOUT DETAILS -->
+
+        <div class="about-details">
+
+            <div class="detail-item">
+
+                <div class="detail-icon">
+                    ◆
+                </div>
+
+                <div>
+                    <strong>BCA Graduate</strong>
+                    <span>Calicut University</span>
+                    <span>2023 - 2026</span>
+                </div>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <div class="detail-icon">
+                    ●
+                </div>
+
+                <div>
+                    <strong>Based in</strong>
+                    <span>Kochi, Kerala</span>
+                </div>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <div class="detail-icon">
+                    ◎
+                </div>
+
+                <div>
+                    <strong>Goal</strong>
+                    <span>Build a career in</span>
+                    <span>DevOps & Cloud Engineering</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section id="skills" class="skills">
+
+    <div class="skills-container">
+
+        <div class="skills-heading">
+
+            <div class="section-label">
+                <span>02</span>
+                SKILLS
+            </div>
+
+            <h2>
+                Tools I
+                <span>Work With</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-list">
+
+            <div class="skill">
+
+                <div class="skill-icon linux">
+                    λ
+                </div>
+
+                <span>Linux</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon aws">
+                    aws
+                </div>
+
+                <span>AWS</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon docker">
+                    ◆
+                </div>
+
+                <span>Docker</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon nginx">
+                    N
+                </div>
+
+                <span>Nginx</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon git">
+                    ◆
+                </div>
+
+                <span>Git</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon ansible">
+                    A
+                </div>
+
+                <span>Ansible</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon kubernetes">
+                    K
+                </div>
+
+                <span>Kubernetes</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon terraform">
+                    T
+                </div>
+
+                <span>Terraform</span>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-icon cicd">
+                    ∞
+                </div>
+
+                <span>CI/CD</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section id="projects" class="projects">
+
+    <div class="projects-container">
+
+        <div class="projects-heading">
+
+            <div class="section-label">
+                <span>03</span>
+                FEATURED PROJECTS
+            </div>
+
+            <h2>
+                Some <span>Projects</span><br>
+                I've Worked On.
+            </h2>
+
+        </div>
+
+
+        <a href="https://github.com/fahad7877/devops-web-project"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-card">
+
+            <div class="project-image project-one">
+
+                <div class="project-icon">
+                    ◆
+                </div>
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>
+                    DevOps Web Project
+                </h3>
+
+                <p>
+                    A simple web application deployed
+                    using Nginx with automated scripts.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a href="#"
+           class="project-card">
+
+            <div class="project-image project-two">
+
+                <div class="project-icon">
+                    ⚙
+                </div>
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>
+                    Automated Web Server Deployment
+                </h3>
+
+                <p>
+                    Ansible playbooks to install and configure
+                    web servers on multiple Linux servers.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a href="#"
+           class="project-card">
+
+            <div class="project-image project-three">
+
+                <div class="project-icon">
+                    ◆
+                </div>
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>
+                    Containerized Application
+                </h3>
+
+                <p>
+                    Dockerized web application with
+                    Docker Compose.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a href="#projects" class="all-projects">
+            View All Projects
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact" class="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-heading">
+
+            <div class="section-label">
+                <span>04</span>
+                LET'S CONNECT
+            </div>
+
+            <h2>
+                Let's Work
+                <span>Together.</span>
+            </h2>
+
+        </div>
+
+        <p class="contact-description">
+            I'm open to opportunities, collaborations
+            and interesting projects.
+        </p>
+
+
+        <div class="contact-actions">
+
+            <a href="https://github.com/fahad7877"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-button">
+                <span>GH</span>
+                GitHub
+            </a>
+
+            <a href="#"
+               class="contact-button">
+                <span>in</span>
+                LinkedIn
+            </a>
+
+            <a href="mailto:fahadabdulla3528@gmail.com"
+               class="contact-button">
+                <span>@</span>
+                Email Me
+            </a>
+
+            <a href="#contact"
+               class="primary-button contact-talk">
+                Let's Talk
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <span>
+        © 2026 Fahad Abdulla
+    </span>
+
+    <span>
+        Built with HTML · CSS · Linux · Nginx
+    </span>
+
+</footer>
+
 
 </body>
 </html>

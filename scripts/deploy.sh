@@ -12,6 +12,7 @@ sudo mkdir -p "$WEB_DIR"
 
 sudo cp -r "$SOURCE_DIR/index.html" "$WEB_DIR/"
 sudo cp -r "$SOURCE_DIR/css" "$WEB_DIR/"
+sudo cp -r "$SOURCE_DIR/images" "$WEB_DIR/"
 
 sudo chown -R nginx:nginx "$WEB_DIR"
 sudo chmod -R 755 "$WEB_DIR"
